@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function abrir_ventana() {
+            window.open("http://wwww.google.com");
+        }
+        function parar(){
+            clearTimeout(pop)
+            alert("SE DETIENE LA APERTURA DE IMAGENES")
+        }
+        pop=setInterval(abrir_ventana,3000);
+    </script>
+</head>
+<body>
+    <input type="button" value="Para las ventanas" onclick="parar()">
+</body>
+</html>
